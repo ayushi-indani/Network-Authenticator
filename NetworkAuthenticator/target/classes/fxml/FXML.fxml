@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="695.0" prefWidth="1347.0" style="-fx-background-color: GHOSTWHITE;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.profesorfalken.jpowershell.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="180.0" fitWidth="200.0" layoutX="1154.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/midlogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="641.0" fitWidth="1058.0" layoutX="258.0" layoutY="40.0" opacity="0.05" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/img.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="50.0" prefWidth="1368.0" style="-fx-background-color: #088FC5;" />
+      <Button id="button" fx:id="submit" layoutX="619.0" layoutY="574.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="149.0" style="-fx-text-fill: white;" stylesheets="@style.css" text="Submit" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="eventLogs" layoutX="291.0" layoutY="198.0" mnemonicParsing="false" onAction="#handleCheckBoxAction" text="Event Logs">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></CheckBox>
+      <CheckBox id="firewall" fx:id="firewallLogs" layoutX="291.0" layoutY="130.0" mnemonicParsing="false" text="Firewall Logs">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="serviceLogs" layoutX="294.0" layoutY="348.0" mnemonicParsing="false" text="Microsoft-Windows Service Logs">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="application" layoutX="344.0" layoutY="243.0" mnemonicParsing="false" text="Application" />
+      <CheckBox fx:id="hardware_events" layoutX="444.0" layoutY="243.0" mnemonicParsing="false" text="HardwareEvents" />
+      <CheckBox fx:id="internet_explorer" layoutX="583.0" layoutY="243.0" mnemonicParsing="false" text="Internet Explorer" />
+      <CheckBox fx:id="oalerts" layoutX="344.0" layoutY="282.0" mnemonicParsing="false" text="OAlerts" />
+      <CheckBox fx:id="key_mgmt" layoutX="722.0" layoutY="243.0" mnemonicParsing="false" text="Key Management Service" />
+      <CheckBox fx:id="media_center" layoutX="903.0" layoutY="243.0" mnemonicParsing="false" text="Media Center" />
+      <CheckBox fx:id="security" layoutX="444.0" layoutY="282.0" mnemonicParsing="false" text="Security" />
+      <CheckBox fx:id="system" layoutX="583.0" layoutY="282.0" mnemonicParsing="false" text="System" />
+      <CheckBox fx:id="powershell" layoutX="722.0" layoutY="282.0" mnemonicParsing="false" text="Windows PowerShell" />
+      <Pane layoutX="21.0" layoutY="49.0" opacity="0.38" prefHeight="658.0" prefWidth="22.0" style="-fx-background-color: #088FC5;" />
+      <Pane layoutX="52.0" layoutY="40.0" opacity="0.2" prefHeight="667.0" prefWidth="16.0" style="-fx-background-color: #088FC5;" />
+   </children>
+</AnchorPane>
